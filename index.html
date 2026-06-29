@@ -4,51 +4,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>blog da amanda</title>
+    <title>Blog da Ale</title>
 </head>
 
 <body>
     <header>
         <h1>Meu blog tech</h1>
         <p>Vou compartilhar conhecimentos sobre tecnologia e programação</p>
-    <style>
-header {
-background-color: #183C63;
-color: #FFFFFF;
-text-align: center;
-max-width: 800px;
-margin: 0 auto;
+        <button>❤️<span>0</span></button>
+        
+        <style>
+            header {
+                background-color: #183C63;
+                color: #FFFFFF;
+                text-align: center;
+                max-width: 800px;
+                margin: 0 auto;
+            }
+
+            main {
+                background-color: #e1e79e;
+                color: #081e35e6;
+                display: flex;
+            }
+
+            div p {
+font-weight: bold;
 }
 
-main {
-background-color: #FFFFFF;
-color: #183C63;
+.artigo-autor {
+font-weight: bold;
 }
-</style>
+        </style>
     </header>
-    <style>
-        <img src="imagem-blog.png"
-alt="logotipo conceitual de tecnologia e educação: um livro aberto de onde emerge um cérebro digital brilhante, cercado por ícones de Wi-Fi, circuitos e lâmpada de ideia. Cores em tons de azul e branco.">
-
-header {
-background-color: #f70aa0;
-color: #f00be4;
-text-align: center;
-max-width: 800px;
-margin: 0 auto;
-}
-
-main {
-background-color: #eb0e50;
-color: #d407f4;
-}
-</style>
     <main>
-<h2>Meu primeiro post</h2>
-<p>Por: \Amanda Beatriz</p>
-<p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
-tecnologia.</p>
-   </main>
+        <img src="imagem-blog.png"
+            alt="logotipo conceitual de tecnologia e educação: um livro aberto de onde emerge um cérebro digital brilhante, cercado por ícones de Wi-Fi, circuitos e lâmpada de ideia. Cores em tons de azul e branco.">
+     <div class="artigo-autor">
+            <h2>Meu primeiro post</h2>
+        <p>Por: Alexandra</p>
+        <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
+            tecnologia.</p></div>
+    </main>
+    <script>
+        const botao = document.querySelector("button");
+botao.addEventListener("click", botaoClicado);
+function botaoClicado() {
+let texto = botao.querySelector("span");
+texto.textContent++;
+}
+</script>
 </body>
-
 </html>
